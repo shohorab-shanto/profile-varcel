@@ -273,6 +273,7 @@ export const apiService = {
   getEducation: async () => MOCK_EDUCATION,
   getSiteSettings: async () => MOCK_SITE_SETTINGS,
   getContacts: async () => [],
+  deleteContact: async (id: number) => ({ success: true }),
   
   // Auth mock
   login: async (credentials: any) => ({ token: 'mock-token-for-vercel' }),
@@ -283,7 +284,10 @@ export const apiService = {
   createProject: async (data: any) => MOCK_PROJECTS[0],
   updateProject: async (id: number, data: any) => MOCK_PROJECTS[0],
   deleteProject: async (id: number) => ({ success: true }),
+  uploadProjectImages: async (projectId: number, formData: any) => [],
+  deleteProjectImage: async (imageId: number) => ({ success: true }),
   createSkill: async (data: any) => MOCK_SKILLS[0],
+  updateSkill: async (id: number, data: any) => MOCK_SKILLS[0],
   deleteSkill: async (id: number) => ({ success: true }),
   createExperience: async (data: any) => MOCK_EXPERIENCE[0],
   updateExperience: async (id: number, data: any) => MOCK_EXPERIENCE[0],
