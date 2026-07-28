@@ -38,6 +38,8 @@ export interface Profile {
   twitter_url?: string;
   facebook_url?: string;
   instagram_url?: string;
+  medium_url?: string;
+  threads_url?: string;
   footer_text?: string;
   created_at: string;
   updated_at: string;
